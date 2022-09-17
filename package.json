@@ -8,7 +8,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "npm run dev",
-    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "dev": "next dev",
+    "develop": "cross-env NODE_ENV=development nodemon server.js",
     "prod": "cross-env NODE_ENV=production node server.js",
     "build": "next build",
     "test": "jest",
