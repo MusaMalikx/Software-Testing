@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-ui": "cucumber-js test/ahmed/",
+    "test-ui": "cucumber-js test/nawal/2",
     "test-api": "jest test/Jest_api"
   },
   "license": "ISC",
