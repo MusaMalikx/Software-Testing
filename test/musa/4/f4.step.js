@@ -14,7 +14,7 @@ Given(
 
 When(
   "I click the {string} color.",
-  { timeout: 2 * 10000 },
+  { timeout: 10000 },
   async function (string) {
     // Write code here that turns the phrase above into concrete actions
     let element = null;
@@ -25,11 +25,8 @@ When(
         )
       );
       for (let i = 0; i < element.length; i++) {
-        // element.map(async (e) => {
-        await driver.sleep(1000);
         element[i].click();
-        // });
-        // await driver.sleep(1000);
+        await driver.sleep(1000);
       }
     } catch (error) {
       element = null;
