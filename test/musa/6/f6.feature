@@ -1,8 +1,5 @@
 Feature:Item details
-Scenario: Seeing the image details of item
+Scenario: Seeing the different images of item
 Given I selected an item from displayed list.
-And I hover the item image. 
-Then the item image zoomed.
-And show item image more clearly
-When the cursor moved either left or right
-Then the item image also move
+When I select different images of item. 
+Then the selected image of item appear.

@@ -13,27 +13,30 @@ Given(
   }
 );
 
-When("I hover the item image.", function () {
+When("I select different images of item.", { timeout: 10000 }, async () => {
   // Write code here that turns the phrase above into concrete actions
-  return "pending";
+  let element = null;
+  try {
+    element = await driver.findElements(
+      By.className(
+        "RSFCarouselThumbnails-thumb-125 RSFImage-root-136 RSFImage-contain-139"
+      )
+    );
+
+    for (let i = 0; i < element.length; i++) {
+      element[i].click();
+      await driver.sleep(1000);
+    }
+  } catch (error) {
+    element = null;
+  }
 });
 
-Then("the item image zoomed.", function () {
-  // Write code here that turns the phrase above into concrete actions
-  return "pending";
-});
-
-Then("show item image more clearly", function () {
-  // Write code here that turns the phrase above into concrete actions
-  return "pending";
-});
-
-When("the cursor moved either left or right", function () {
-  // Write code here that turns the phrase above into concrete actions
-  return "pending";
-});
-
-Then("the item image also move", function () {
+Then("the selected image of item appear.", { timeout: 2 * 10000 }, async () => {
   // Write code here that turns the phrase above into concrete actions
   assert(true, true);
+});
+
+AfterAll("end", async function () {
+  await driver.quit();
 });

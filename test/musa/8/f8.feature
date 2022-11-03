@@ -1,5 +1,5 @@
 Feature:Item details
-Scenario: Selecting the suggested items
-Given I selected an item from displayed list.
-When I select different suggesting item 
-Then that selected item detail page opens.
+Scenario: Clicking the item's image
+Given I selected an item from displayed list
+When I click on the selected item image 
+Then the item image expands

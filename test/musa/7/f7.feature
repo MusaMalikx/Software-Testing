@@ -1,5 +1,5 @@
 Feature:Item details
-Scenario: Seeing the different images of item
+Scenario: Selecting the suggested items
 Given I selected an item from displayed list.
-When I select different images of item. 
-Then the selected image of item appear.
+When I select different suggesting item 
+Then that selected item detail page opens.
