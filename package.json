@@ -1,13 +1,12 @@
 {
-  "name": "ahmed-cucumber-practice",
+  "name": "software-testing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-ui": "cucumber-js test/ahmed/",
+    "test-ui": "cucumber-js test/ahmed",
     "test-api": "jest test/Jest_api"
   },
-  "author": "https://github.com/ahmedazhar2299",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.6",
