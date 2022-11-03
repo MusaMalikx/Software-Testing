@@ -19,3 +19,10 @@
 
 <strong> Detail </strong> : Resolved issues generated on github. Analyzed the overall team progress. Configuration of JEST with Chai and running a sample test case for API.
 - - - -
+## Meeting 4
+### Date : 3 November 2022
+
+<strong> Participants </strong> : **Muhammad Ahmed, Muhammad Musa Malik, Muhammad Nawal Ali** <br />
+
+<strong> Detail </strong> : Merged All the Branches. Explored Medusa Open Source E commerce Store and highlighted key testing features.
+- - - -
