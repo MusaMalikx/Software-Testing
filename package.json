@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-ui": "cucumber-js test/ahmed/",
+    "test-ui": "cucumber-js test/musa/4",
     "test-api": "jest test/Jest_api"
   },
   "author": "https://github.com/ahmedazhar2299",
