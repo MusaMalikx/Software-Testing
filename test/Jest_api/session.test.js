@@ -9,7 +9,7 @@ describe('User session on response 200',()=>{
         expect(response.statusCode).to.equal(200);
         var bodyObject = JSON.parse(body);
         expect(bodyObject.name).to.equal("Mark");
-         expect(bodyObject.email).to.equal("mark@domain.com");
+        expect(bodyObject.email).to.equal("mark@domain.com");
         done();
     })
  })
