@@ -18,7 +18,7 @@ export default function Checkout() {
   return (
     <Container maxWidth="lg">
       <div className={classes.main}>
-        <Typography variant="h4" component="h1" gutterBottom color="primary">
+        <Typography data-testid = "checkout-final" variant="h4" component="h1" gutterBottom color="primary">
           Coming soon!
         </Typography>
       </div>
