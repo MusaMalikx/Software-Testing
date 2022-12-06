@@ -4,6 +4,8 @@ import Search from '../../components/Search/Search'
 import SearchDesktop from '../../components/Search/SearchDesktop'
 import SearchMobile from '../../components/Search/SearchMobile'
 import Checkout from '../../pages/checkout'
+import AppShell from '../../pages/appShell'
+import Subcategory from "../../pages/search";
 import {render, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
 import style from '../utility/style.js'
@@ -57,6 +59,26 @@ describe('Search Mobile',()=>{
     const tree = renderer.create(<SearchMobile />).toJSON()
     expect(tree).toMatchSnapshot();
   })
+
+})
+
+describe('App Shell',()=>{
+
+  test('App Shell', () => {
+    const tree = renderer.create(<AppShell />).toJSON()
+    expect(tree).toMatchSnapshot();
+  })
+
+})
+
+describe('Sub Category',()=>{
+
+  test('Sub Category', () => {
+    const component = renderer.create(<Subcategory />);
+  
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
 })
 
