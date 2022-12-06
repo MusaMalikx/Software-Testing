@@ -13,6 +13,7 @@
     "prod": "cross-env NODE_ENV=production node server.js",
     "build": "next build",
     "test": "jest test/ --coverage --verbose",
+    "load-test": "k6 run performance/scenerio2.js",
     "deploy": "npm run build && xdn deploy",
     "prettier": "prettier --write \"**/*.js\" \"!{node_modules,.next,.yalc}/**\"",
     "lint": "eslint .",
