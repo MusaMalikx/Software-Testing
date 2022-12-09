@@ -9,6 +9,8 @@ import Subcategory from "../../pages/search";
 import {render, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
 import style from '../utility/style.js'
+import React from 'react';
+import MyDocument from "../../pages/_document";
 
 
 describe('Checkout',()=>{
@@ -81,4 +83,17 @@ describe('Sub Category',()=>{
   });
 
 })
+
+describe('My doc',()=>{
+
+  test('basic snapshot', () => {
+    const component = renderer.create(<MyDocument />);
+  
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+})
+
+
 
